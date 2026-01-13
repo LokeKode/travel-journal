@@ -1,20 +1,119 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    background: #ffffff;
+    color: #2B283A;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 16px;
+}
+
+
 header {
     background-color: #F55A5A;
+    color: white;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    height: 55px;
 }
 
-
-header > img {
-    width: 24px;
-    margin-right: 7px;
+header>img {
+    width: 48px;
+    margin-right: 10px;
 }
 
-header > h1 {
-    font-size: 0.9rem;
+header>h1 {
+    font-size: 1.8rem;
     font-weight: 500;
+    letter-spacing: -0.3px;
+    margin: 0;
 }
 
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.main-image {
+    width: 250px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.journal-entry {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.journal-entry:last-child {
+    border-bottom: none;
+}
+
+
+.info-container .location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+article.journal-entry .marker {
+    width: 20px;
+    margin: 0;
+}
+
+
+
+.info-container span.country {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    margin: 0;
+}
+
+.info-container a {
+    font-size: 1rem;
+    color: #918E9B;
+    text-decoration: underline;
+}
+
+.info-container a:visited {
+    color: #918E9B;
+}
+
+.info-container h2.entry-title {
+    font-size: 2.5rem;
+    margin: 6px 0 12px 0;
+    font-weight: 700;
+}
+
+.info-container p.trip-dates {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.info-container p.entry-text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 520px;
+}
