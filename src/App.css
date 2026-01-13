@@ -61,6 +61,7 @@ header>h1 {
     gap: 20px;
     padding: 24px 0;
     border-bottom: 1px solid #F5F5F5;
+    margin-bottom: 36px;
 }
 
 .journal-entry:last-child {
